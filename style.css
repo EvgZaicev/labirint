@@ -45,7 +45,7 @@ h3 {
   border-radius: 0.8rem;
   padding: 1rem 3rem;
   width: 19.2rem;
-  background: white;
+  background: #fff;
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2.4rem;
@@ -57,12 +57,12 @@ h3 {
 .cta:hover {
   border: 1px solid #B91C1C;
   background: #B91C1C;
-  color: white;
+  color: #fff;
 }
 .cta:active {
   border: 1px solid #1A1F24;
   background: #1A1F24;
-  color: white;
+  color: #fff;
 }
 .cta-disabled, .cta:disabled {
   border: 1px solid #E6EBF0;
@@ -92,7 +92,7 @@ h3 {
   justify-content: space-between;
 }
 .slider-header .buttons button {
-  background: white;
+  background: #fff;
   border: none;
   width: 3rem;
   height: 3rem;
@@ -187,7 +187,7 @@ h3 {
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 140%;
-  color: white;
+  color: #fff;
   overflow: hidden;
 }
 .slider .slide .card__image .present:hover {
@@ -210,7 +210,7 @@ h3 {
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 140%;
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 .slider .slide .card__image .sale {
@@ -221,7 +221,7 @@ h3 {
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 140%;
-  color: white;
+  color: #fff;
   padding: 0.3rem 0.5rem 0.3rem 1.1rem;
   border-bottom-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -250,7 +250,7 @@ h3 {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 140%;
-  color: #64696E;
+  color: #383D42;
 }
 .slider .slide .card__text .price-wrapper .price-old::after {
   position: absolute;
@@ -355,7 +355,7 @@ h3 {
 .slider .slide .card-unavailable .cta:hover, .slider .slide .card-unavailable .cta:active {
   border: 1px solid #1A1F24;
   background: #383D42;
-  color: white;
+  color: #fff;
 }
 .slider .slide .card .quantity {
   font-weight: 400;

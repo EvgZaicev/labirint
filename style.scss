@@ -1,3 +1,12 @@
+$black: #1A1F24;
+$gray: #383D42;
+$red: #B91C1C;
+$lightblue: #E6EBF0;
+$lightgray: #64696E;
+$verylightgray: #C8CDD2;
+$present: #FB923C;
+$delivery: #69A042;
+
 * {
   margin: 0;
   padding: 0;
@@ -37,40 +46,40 @@ h3 {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 3.2rem;
-  color: #1A1F24;
+  color: $black;
 }
 
 .cta {
-  border: 1px solid #1A1F24;
+  border: 1px solid $black;
   border-radius: 0.8rem;
   padding: 1rem 3rem;
   width: 19.2rem;
-  background: white;
+  background: #fff;
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2.4rem;
   white-space: nowrap;
-  color: #1A1F24;
+  color: $black;
   cursor: pointer;
   transition: 0.3s;
 
   &:hover {
-    border: 1px solid #B91C1C;
-    background: #B91C1C;
-    color: white;
+    border: 1px solid $red;
+    background: $red;
+    color: #fff;
   }
 
   &:active {
-    border: 1px solid #1A1F24;
-    background: #1A1F24;
-    color: white;
+    border: 1px solid $black;
+    background: $black;
+    color: #fff;
   }
 
   &-disabled,
   &:disabled {
-    border: 1px solid #E6EBF0;
-    background: #E6EBF0;
-    color: #C8CDD2;
+    border: 1px solid $lightblue;
+    background: $lightblue;
+    color: $verylightgray;
     pointer-events: none;
   }
 }
@@ -96,7 +105,7 @@ h3 {
 
   .buttons {
     button {
-      background: white;
+      background: #fff;
       border: none;
       width: 3rem;
       height: 3rem;
@@ -192,14 +201,12 @@ h3 {
           transition: 0.3s;
 
           .present-info {
-
-
             span {
               opacity: 0;
               font-weight: 700;
               font-size: 1.4rem;
               line-height: 140%;
-              color: white;
+              color: #fff;
               overflow: hidden;
             }
           }
@@ -207,7 +214,7 @@ h3 {
 
           &:hover {
             width: calc(100% - 1.2rem);
-            background-color: #FB923C;
+            background-color: $present;
             background-image: none;
 
             .present-info {
@@ -225,7 +232,7 @@ h3 {
                   font-weight: 700;
                   font-size: 1.6rem;
                   line-height: 140%;
-                  color: white;
+                  color: #fff;
                   text-decoration: none;
                 }
               }
@@ -242,7 +249,7 @@ h3 {
           font-weight: 700;
           font-size: 1.4rem;
           line-height: 140%;
-          color: white;
+          color: #fff;
           padding: 0.3rem 0.5rem 0.3rem 1.1rem;
           border-bottom-left-radius: 5px;
           border-top-right-radius: 5px;
@@ -275,7 +282,7 @@ h3 {
             font-weight: 400;
             font-size: 1.6rem;
             line-height: 140%;
-            color: #64696E;
+            color: $gray;
 
             &::after {
               position: absolute;
@@ -283,7 +290,7 @@ h3 {
               width: 105%;
               top: 50%;
               display: block;
-              border-bottom: 1px solid #64696E;
+              border-bottom: 1px solid $lightgray;
               transform: rotate(169.46deg);
             }
           }
@@ -323,7 +330,7 @@ h3 {
           font-weight: 400;
           font-size: 1.4rem;
           line-height: 2rem;
-          color: #64696E;
+          color: $lightgray;
           margin: 2px 0;
         }
 
@@ -335,7 +342,7 @@ h3 {
           font-weight: 400;
           font-size: 1.4rem;
           line-height: 140%;
-          color: #64696E;
+          color: $lightgray;
           margin: 2px 0;
 
         }
@@ -350,7 +357,7 @@ h3 {
             font-weight: 400;
             font-size: 1.6rem;
             line-height: 140%;
-            color: #64696E;
+            color: $lightgray;
             text-decoration: none;
           }
 
@@ -365,7 +372,7 @@ h3 {
               transition: 0.3s;
 
               &:hover {
-                border-bottom: 1px solid #64696E;
+                border-bottom: 1px solid $lightgray;
               }
 
             }
@@ -388,7 +395,7 @@ h3 {
           font-weight: 700;
           font-size: 1.4rem;
           line-height: 140%;
-          color: #69A042;
+          color: $delivery;
         }
       }
 
@@ -401,9 +408,9 @@ h3 {
 
           &:hover,
           &:active {
-            border: 1px solid #1A1F24;
-            background: #383D42;
-            color: white;
+            border: 1px solid $black;
+            background: $gray;
+            color: #fff;
           }
         }
       }
@@ -412,7 +419,7 @@ h3 {
         font-weight: 400;
         font-size: 1.4rem;
         line-height: 2rem;
-        color: #64696E;
+        color: $lightgray;
       }
 
       .like {
