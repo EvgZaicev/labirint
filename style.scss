@@ -7,6 +7,36 @@ $verylightgray: #C8CDD2;
 $present: #FB923C;
 $delivery: #69A042;
 
+@mixin small-font {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+@mixin bold-small-font {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+@mixin normal-font {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 140%;
+}
+
+@mixin bold-normal-font {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 140%;
+}
+
+@mixin bold-big-font {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -55,9 +85,7 @@ h3 {
   padding: 1rem 3rem;
   width: 19.2rem;
   background: #fff;
-  font-weight: 700;
-  font-size: 1.8rem;
-  line-height: 2.4rem;
+  @include bold-big-font;
   white-space: nowrap;
   color: $black;
   cursor: pointer;
@@ -202,10 +230,8 @@ h3 {
 
           .present-info {
             span {
+              @include bold-small-font;
               opacity: 0;
-              font-weight: 700;
-              font-size: 1.4rem;
-              line-height: 140%;
               color: #fff;
               overflow: hidden;
             }
@@ -229,9 +255,7 @@ h3 {
                 transition-delay: 0.3s;
 
                 a {
-                  font-weight: 700;
-                  font-size: 1.6rem;
-                  line-height: 140%;
+                  @include bold-normal-font;
                   color: #fff;
                   text-decoration: none;
                 }
@@ -246,9 +270,7 @@ h3 {
           left: 0;
           bottom: 0;
           background-color: black;
-          font-weight: 700;
-          font-size: 1.4rem;
-          line-height: 140%;
+          @include bold-small-font;
           color: #fff;
           padding: 0.3rem 0.5rem 0.3rem 1.1rem;
           border-bottom-left-radius: 5px;
@@ -271,17 +293,13 @@ h3 {
           align-items: center;
 
           .price {
-            font-weight: 700;
-            font-size: 1.8rem;
-            line-height: 2.4rem;
+            @include bold-big-font;
           }
 
           .price-old {
             position: relative;
             margin-left: 0.8rem;
-            font-weight: 400;
-            font-size: 1.6rem;
-            line-height: 140%;
+            @include normal-font;
             color: $gray;
 
             &::after {
@@ -319,17 +337,13 @@ h3 {
           text-overflow: ellipsis;
           padding-right: 5px;
           font-style: normal;
-          font-weight: 400;
-          font-size: 1.6rem;
-          line-height: 140%;
+          @include normal-font;
           color: #1C1917;
           margin: 2px 0;
         }
 
         .author {
-          font-weight: 400;
-          font-size: 1.4rem;
-          line-height: 2rem;
+          @include small-font;
           color: $lightgray;
           margin: 2px 0;
         }
@@ -339,9 +353,7 @@ h3 {
           overflow: hidden;
           text-overflow: ellipsis;
           padding-right: 5px;
-          font-weight: 400;
-          font-size: 1.4rem;
-          line-height: 140%;
+          @include small-font;
           color: $lightgray;
           margin: 2px 0;
 
@@ -354,9 +366,7 @@ h3 {
           align-items: center;
 
           a {
-            font-weight: 400;
-            font-size: 1.6rem;
-            line-height: 140%;
+            @include normal-font;
             color: $lightgray;
             text-decoration: none;
           }
@@ -392,9 +402,7 @@ h3 {
         }
 
         .delivery {
-          font-weight: 700;
-          font-size: 1.4rem;
-          line-height: 140%;
+          @include bold-small-font;
           color: $delivery;
         }
       }
@@ -416,9 +424,7 @@ h3 {
       }
 
       .quantity {
-        font-weight: 400;
-        font-size: 1.4rem;
-        line-height: 2rem;
+        @include small-font;
         color: $lightgray;
       }
 
