@@ -104,26 +104,26 @@ h3 {
     }
 
     .slick-custom-prev {
-      background-image: url('/img/arrow_right_active.png');
+      background-image: url('./img/arrow_right_active.png');
       transform: rotate(180deg);
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
 
       &.slick-disabled {
-        background-image: url('/img/arrow_left_inactive.png');
+        background-image: url('./img/arrow_left_inactive.png');
         transform: rotate(0deg);
       }
     }
 
     .slick-custom-next {
-      background-image: url('/img/arrow_right_active.png');
+      background-image: url('./img/arrow_right_active.png');
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
 
       &.slick-disabled {
-        background-image: url('/img/arrow_left_inactive.png');
+        background-image: url('./img/arrow_left_inactive.png');
         transform: rotate(180deg);
       }
     }
@@ -183,7 +183,7 @@ h3 {
           bottom: 3rem;
           width: 3.2rem;
           height: 3.2rem;
-          background-image: url('/img/present.png');
+          background-image: url('./img/present.png');
           background-size: contain;
           background-position: center;
           background-repeat: no-repeat;
@@ -415,7 +415,7 @@ h3 {
         border: none;
         background: transparent;
         cursor: pointer;
-        background-image: url('/img/no-like.png');
+        background-image: url('./img/no-like.png');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -426,7 +426,7 @@ h3 {
         }
 
         &.liked {
-          background-image: url('/img/like.png');
+          background-image: url('./img/like.png');
         }
       }
     }
