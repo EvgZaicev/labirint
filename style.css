@@ -179,8 +179,8 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  transition: 0.3s;
   border-radius: 2rem;
+  transition: 0.3s;
 }
 .slider .slide .card__image .present .present-info span {
   opacity: 0;
@@ -191,7 +191,7 @@ h3 {
   overflow: hidden;
 }
 .slider .slide .card__image .present:hover {
-  width: 20rem;
+  width: calc(100% - 1.2rem);
   background-color: #FB923C;
   background-image: none;
 }
@@ -200,10 +200,18 @@ h3 {
   justify-content: center;
   align-items: center;
   height: 100%;
+  transition-delay: 0.3s;
 }
 .slider .slide .card__image .present:hover .present-info span {
   opacity: 1;
-  transition: 0;
+  transition-delay: 0.3s;
+}
+.slider .slide .card__image .present:hover .present-info span a {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 140%;
+  color: white;
+  text-decoration: none;
 }
 .slider .slide .card__image .sale {
   position: absolute;
