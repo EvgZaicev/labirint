@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабиринт</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" href="style.css">
+  <script defer type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script defer type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script defer type="text/javascript" src="slick/slick.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+
+<body>
+  <div class="container">
+    <div class="slider-header">
+      <h3>Лучшее</h3>
+      <div class="buttons">
+        <button type="button" class="slick-custom-prev"></button>
+        <button type="button" class="slick-custom-next"></button>
+      </div>
+    </div>
+    <div class="slider">
+      <div class="slide">
+        <div class="card">
+          <div class="card__image">
+            <img src="/img/card-image.png" alt="Пиковая дама">
+            <div class="present"></div>
+            <div class="sale">-55% <span>ещё 2 дня</span></div>
+          </div>
+          <div class="card__text">
+            <div class="text__top">
+              <div class="flex">
+                <div class="price-wrapper">
+                  <div class="price">1350 ₽</div>
+                  <div class="price-old">500 ₽</div>
+                </div>
+                <div class="return-wrapper">
+                  <button class="return"><img src="/img/return.png" alt="возврат"></button>
+                </div>
+              </div>
+              <p class="quantity">за 2 тома</p>
+            </div>
+            <div class="text__bottom">
+              <p class="book-name">Пиковая Дама</p>
+              <p class="author">Пушкин Александр</p>
+              <p class="style">Лабиринт/Детская художественная литература</p>
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <img src="/img/star.png" alt="рейтинг">
+                  <a href="">4,8</a>
+                </div>
+                <div class="comments">
+                  <img src="/img/comment.png" alt="комментарии">
+                  <a href="">1234</a>
+                </div>
+              </div>
+              <button class="cta">В корзину</button>
+              <p class="delivery">Доставим бесплатно</p>
+            </div>
+          </div>
+          <button class="like"></button>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="card">
+          <div class="card__image">
+            <img src="/img/card-image.png" alt="Пиковая дама">
+            <div class="present">
+              <div class="present-info"><span>Вам подарок</span></div>
+            </div>
+            <div class="sale">-55% <span>ещё 2 дня</span></div>
+          </div>
+          <div class="card__text">
+            <div class="text__top">
+              <div class="flex">
+                <div class="price-wrapper">
+                  <div class="price">1350 ₽</div>
+                  <div class="price-old">500 ₽</div>
+                </div>
+                <div class="return-wrapper">
+                  <button class="return"><img src="/img/return.png" alt="возврат"></button>
+                </div>
+              </div>
+              <p class="quantity">за 2 тома</p>
+            </div>
+            <div class="text__bottom">
+              <p class="book-name">Пиковая Дама</p>
+              <p class="author">Пушкин Александр</p>
+              <p class="style">Лабиринт/Детская художественная литература</p>
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <img src="/img/star.png" alt="рейтинг">
+                  <a href="">4,8</a>
+                </div>
+                <div class="comments">
+                  <img src="/img/comment.png" alt="комментарии">
+                  <a href="">1234</a>
+                </div>
+              </div>
+              <button class="cta">В корзину</button>
+              <p class="delivery">Доставим бесплатно</p>
+            </div>
+          </div>
+          <button class="like"></button>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="card card-unavailable">
+          <div class="card__image">
+            <img src="/img/card-image2.png" alt="Линейка">
+            <!-- <div class="present"></div> -->
+            <!-- <div class="sale">-55% <span>ещё 2 дня</span></div> -->
+          </div>
+          <div class="card__text">
+            <div class="text__top">
+              <div class="flex">
+                <div class="price-wrapper">
+                  <div class="price">Ожидается</div>
+                  <div class="price-old"></div>
+                </div>
+                <!-- <div class="return-wrapper">
+                  <button class="return"><img src="/img/return.png" alt="возврат"></button>
+                </div> -->
+              </div>
+              <!-- <p class="quantity">за 2 тома</p> -->
+            </div>
+            <div class="text__bottom">
+              <p class="book-name">Линейка в ассортименте</p>
+              <!-- <p class="author">Пушкин Александр</p> -->
+              <p class="style">Линейка Феникс</p>
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <img src="/img/star.png" alt="рейтинг">
+                  <a href="">4,8</a>
+                </div>
+                <div class="comments">
+                  <img src="/img/comment.png" alt="комментарии">
+                  <a href="">1234</a>
+                </div>
+              </div>
+              <button class="cta">Найти похожее</button>
+              <p class="delivery">Доставим бесплатно</p>
+            </div>
+          </div>
+          <button class="like"></button>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="card card-unavailable">
+          <div class="card__image">
+            <img src="/img/not-in-sale.png" alt="Пиковая дама">
+          </div>
+          <div class="card__text">
+            <div class="text__top">
+              <div class="flex">
+                <div class="price-wrapper">
+                  <div class="price">Нет в продаже</div>
+                  <div class="price-old"></div>
+                </div>
+                <div class="return-wrapper">
+                </div>
+              </div>
+            </div>
+            <div class="text__bottom">
+              <p class="book-name">Пиковая Дама</p>
+              <p class="author">Пушкин Александр</p>
+              <p class="style">Лабиринт/Детская художественная литература</p>
+              <div class="rating-wrapper">
+              </div>
+              <button class="cta">Найти похожее</button>
+            </div>
+          </div>
+          <button class="like"></button>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="card">
+          <div class="card__image">
+            <img src="/img/card-image.png" alt="Пиковая дама">
+            <div class="present"></div>
+            <div class="sale">-55% <span>ещё 2 дня</span></div>
+          </div>
+          <div class="card__text">
+            <div class="text__top">
+              <div class="flex">
+                <div class="price-wrapper">
+                  <div class="price">1350 ₽</div>
+                  <div class="price-old">500 ₽</div>
+                </div>
+                <div class="return-wrapper">
+                  <button class="return"><img src="/img/return.png" alt="возврат"></button>
+                </div>
+              </div>
+              <p class="quantity">за 2 тома</p>
+            </div>
+            <div class="text__bottom">
+              <p class="book-name">Пиковая Дама</p>
+              <p class="author">Пушкин Александр</p>
+              <p class="style">Лабиринт/Детская художественная литература</p>
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <img src="/img/star.png" alt="рейтинг">
+                  <a href="">4,8</a>
+                </div>
+                <div class="comments">
+                  <img src="/img/comment.png" alt="комментарии">
+                  <a href="">1234</a>
+                </div>
+              </div>
+              <button class="cta">В корзину</button>
+              <p class="delivery">Доставим бесплатно</p>
+            </div>
+          </div>
+          <button class="like"></button>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="card">
+          <div class="card__image">
+            <img src="/img/card-image.png" alt="Пиковая дама">
+            <div class="present"></div>
+            <div class="sale">-55% <span>ещё 2 дня</span></div>
+          </div>
+          <div class="card__text">
+            <div class="text__top">
+              <div class="flex">
+                <div class="price-wrapper">
+                  <div class="price">1350 ₽</div>
+                  <div class="price-old">500 ₽</div>
+                </div>
+                <div class="return-wrapper">
+                  <button class="return"><img src="/img/return.png" alt="возврат"></button>
+                </div>
+              </div>
+              <p class="quantity">за 2 тома</p>
+            </div>
+            <div class="text__bottom">
+              <p class="book-name">Пиковая Дама</p>
+              <p class="author">Пушкин Александр</p>
+              <p class="style">Лабиринт/Детская художественная литература</p>
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <img src="/img/star.png" alt="рейтинг">
+                  <a href="">4,8</a>
+                </div>
+                <div class="comments">
+                  <img src="/img/comment.png" alt="комментарии">
+                  <a href="">1234</a>
+                </div>
+              </div>
+              <button class="cta">В корзину</button>
+              <p class="delivery">Доставим бесплатно</p>
+            </div>
+          </div>
+          <button class="like"></button>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="card">
+          <div class="card__image">
+            <img src="/img/card-image.png" alt="Пиковая дама">
+            <div class="present"></div>
+            <div class="sale">-55% <span>ещё 2 дня</span></div>
+          </div>
+          <div class="card__text">
+            <div class="text__top">
+              <div class="flex">
+                <div class="price-wrapper">
+                  <div class="price">1350 ₽</div>
+                  <div class="price-old">500 ₽</div>
+                </div>
+                <div class="return-wrapper">
+                  <button class="return"><img src="/img/return.png" alt="возврат"></button>
+                </div>
+              </div>
+              <p class="quantity">за 2 тома</p>
+            </div>
+            <div class="text__bottom">
+              <p class="book-name">Пиковая Дама</p>
+              <p class="author">Пушкин Александр</p>
+              <p class="style">Лабиринт/Детская художественная литература</p>
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <img src="/img/star.png" alt="рейтинг">
+                  <a href="">4,8</a>
+                </div>
+                <div class="comments">
+                  <img src="/img/comment.png" alt="комментарии">
+                  <a href="">1234</a>
+                </div>
+              </div>
+              <button class="cta">В корзину</button>
+              <p class="delivery">Доставим бесплатно</p>
+            </div>
+          </div>
+          <button class="like"></button>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="card">
+          <div class="card__image">
+            <img src="/img/card-image.png" alt="Пиковая дама">
+            <div class="present"></div>
+            <div class="sale">-55% <span>ещё 2 дня</span></div>
+          </div>
+          <div class="card__text">
+            <div class="text__top">
+              <div class="flex">
+                <div class="price-wrapper">
+                  <div class="price">1350 ₽</div>
+                  <div class="price-old">500 ₽</div>
+                </div>
+                <div class="return-wrapper">
+                  <button class="return"><img src="/img/return.png" alt="возврат"></button>
+                </div>
+              </div>
+              <p class="quantity">за 2 тома</p>
+            </div>
+            <div class="text__bottom">
+              <p class="book-name">Пиковая Дама</p>
+              <p class="author">Пушкин Александр</p>
+              <p class="style">Лабиринт/Детская художественная литература</p>
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <img src="/img/star.png" alt="рейтинг">
+                  <a href="">4,8</a>
+                </div>
+                <div class="comments">
+                  <img src="/img/comment.png" alt="комментарии">
+                  <a href="">1234</a>
+                </div>
+              </div>
+              <button class="cta">В корзину</button>
+              <p class="delivery">Доставим бесплатно</p>
+            </div>
+          </div>
+          <button class="like"></button>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="card">
+          <div class="card__image">
+            <img src="/img/card-image.png" alt="Пиковая дама">
+            <div class="present"></div>
+            <div class="sale">-55% <span>ещё 2 дня</span></div>
+          </div>
+          <div class="card__text">
+            <div class="text__top">
+              <div class="flex">
+                <div class="price-wrapper">
+                  <div class="price">1350 ₽</div>
+                  <div class="price-old">500 ₽</div>
+                </div>
+                <div class="return-wrapper">
+                  <button class="return"><img src="/img/return.png" alt="возврат"></button>
+                </div>
+              </div>
+              <p class="quantity">за 2 тома</p>
+            </div>
+            <div class="text__bottom">
+              <p class="book-name">Пиковая Дама</p>
+              <p class="author">Пушкин Александр</p>
+              <p class="style">Лабиринт/Детская художественная литература</p>
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <img src="/img/star.png" alt="рейтинг">
+                  <a href="">4,8</a>
+                </div>
+                <div class="comments">
+                  <img src="/img/comment.png" alt="комментарии">
+                  <a href="">1234</a>
+                </div>
+              </div>
+              <button class="cta">В корзину</button>
+              <p class="delivery">Доставим бесплатно</p>
+            </div>
+          </div>
+          <button class="like"></button>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="card">
+          <div class="card__image">
+            <img src="/img/card-image.png" alt="Пиковая дама">
+            <div class="present"></div>
+            <div class="sale">-55% <span>ещё 2 дня</span></div>
+          </div>
+          <div class="card__text">
+            <div class="text__top">
+              <div class="flex">
+                <div class="price-wrapper">
+                  <div class="price">1350 ₽</div>
+                  <div class="price-old">500 ₽</div>
+                </div>
+                <div class="return-wrapper">
+                  <button class="return"><img src="/img/return.png" alt="возврат"></button>
+                </div>
+              </div>
+              <p class="quantity">за 2 тома</p>
+            </div>
+            <div class="text__bottom">
+              <p class="book-name">Пиковая Дама</p>
+              <p class="author">Пушкин Александр</p>
+              <p class="style">Лабиринт/Детская художественная литература</p>
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <img src="/img/star.png" alt="рейтинг">
+                  <a href="">4,8</a>
+                </div>
+                <div class="comments">
+                  <img src="/img/comment.png" alt="комментарии">
+                  <a href="">1234</a>
+                </div>
+              </div>
+              <button class="cta">В корзину</button>
+              <p class="delivery">Доставим бесплатно</p>
+            </div>
+          </div>
+          <button class="like"></button>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="card">
+          <div class="card__image">
+            <img src="/img/card-image.png" alt="Пиковая дама">
+            <div class="present"></div>
+            <div class="sale">-55% <span>ещё 2 дня</span></div>
+          </div>
+          <div class="card__text">
+            <div class="text__top">
+              <div class="flex">
+                <div class="price-wrapper">
+                  <div class="price">1350 ₽</div>
+                  <div class="price-old">500 ₽</div>
+                </div>
+                <div class="return-wrapper">
+                  <button class="return"><img src="/img/return.png" alt="возврат"></button>
+                </div>
+              </div>
+              <p class="quantity">за 2 тома</p>
+            </div>
+            <div class="text__bottom">
+              <p class="book-name">Пиковая Дама</p>
+              <p class="author">Пушкин Александр</p>
+              <p class="style">Лабиринт/Детская художественная литература</p>
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <img src="/img/star.png" alt="рейтинг">
+                  <a href="">4,8</a>
+                </div>
+                <div class="comments">
+                  <img src="/img/comment.png" alt="комментарии">
+                  <a href="">1234</a>
+                </div>
+              </div>
+              <button class="cta">В корзину</button>
+              <p class="delivery">Доставим бесплатно</p>
+            </div>
+          </div>
+          <button class="like"></button>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="card">
+          <div class="card__image">
+            <img src="/img/card-image.png" alt="Пиковая дама">
+            <div class="present"></div>
+            <div class="sale">-55% <span>ещё 2 дня</span></div>
+          </div>
+          <div class="card__text">
+            <div class="text__top">
+              <div class="flex">
+                <div class="price-wrapper">
+                  <div class="price">1350 ₽</div>
+                  <div class="price-old">500 ₽</div>
+                </div>
+                <div class="return-wrapper">
+                  <button class="return"><img src="/img/return.png" alt="возврат"></button>
+                </div>
+              </div>
+              <p class="quantity">за 2 тома</p>
+            </div>
+            <div class="text__bottom">
+              <p class="book-name">Пиковая Дама</p>
+              <p class="author">Пушкин Александр</p>
+              <p class="style">Лабиринт/Детская художественная литература</p>
+              <div class="rating-wrapper">
+                <div class="rating">
+                  <img src="/img/star.png" alt="рейтинг">
+                  <a href="">4,8</a>
+                </div>
+                <div class="comments">
+                  <img src="/img/comment.png" alt="комментарии">
+                  <a href="">1234</a>
+                </div>
+              </div>
+              <button class="cta">В корзину</button>
+              <p class="delivery">Доставим бесплатно</p>
+            </div>
+          </div>
+          <button class="like"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
